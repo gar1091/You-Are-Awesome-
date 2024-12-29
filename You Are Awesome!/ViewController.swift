@@ -17,23 +17,26 @@ class ViewController: UIViewController {
     
     
     @IBAction func messageButtonPressed(_ sender: UIButton){
-        let awesomeMessage = "You Are Awesome!"
-        let greatMessage = "You Are Great!"
-        let bombMessage = "You Are Da Bomb!"
+        let Peanut = "You Got Peanut Butter in my Choclate!"
+        let Choclate = "You Got Choclate in my Peanut Butter!"
         
-        if messageLabel.text == awesomeMessage {
-            messageLabel.text = greatMessage
-            imageView.image = UIImage(named: "image1")
-        } else if messageLabel.text == greatMessage{
-            messageLabel.text = bombMessage
-            imageView.image = UIImage(named: "image2")
-        } else {
-            messageLabel.text = awesomeMessage
-            imageView.image = UIImage(named: "image0")
+        
+        if messageLabel.text == Peanut {
+            messageLabel.text = Choclate
+            messageLabel.textColor = UIColor.brown
+            messageLabel.textAlignment = NSTextAlignment.left
+            imageView.image = UIImage(named: "image10")
+        } else{
+            
+            messageLabel.text = Peanut
+            messageLabel.textColor = UIColor.orange
+            messageLabel.textAlignment = NSTextAlignment.right
+            imageView.image = UIImage(named: "image11")
         }
     }
     
 }
+
 
 
 
